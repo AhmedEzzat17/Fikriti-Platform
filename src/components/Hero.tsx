@@ -10,6 +10,25 @@ const Hero: React.FC = () => {
   const navigate = useNavigate();
   const isRtl = currentLang === "ar";
 
+  const renderTitle = (text: string) => {
+    const cleanText = text.replace(/\.$/, "");
+    // Split text keeping the matched words
+    const parts = cleanText.split(/(Fikriti|فـكـرتـي|فكرتي)/gi);
+    
+    return (
+      <>
+        {parts.map((part, index) => {
+          const lowerPart = part.toLowerCase();
+          if (lowerPart === "fikriti" || part === "فـكـرتـي" || part === "فكرتي") {
+             return <span key={index} style={{ color: "var(--main-color)" }}>{part}</span>;
+          }
+          return <React.Fragment key={index}>{part}</React.Fragment>;
+        })}
+        <span style={{ color: "var(--main-color)" }}>.</span>
+      </>
+    );
+  };
+
   return (
     <section id="hero" className="hero-modern">
       {/* ── Background & Smart Overlay ── */}
@@ -27,8 +46,7 @@ const Hero: React.FC = () => {
           {/* Centered layout */}
           <div className="col-xl-9 col-lg-10 hero-content" data-aos="fade-up">
             <h1 className="hero-title">
-              {t("hero_title").replace(".", "")}
-              <span style={{ color: "var(--main-color)" }}>.</span>
+              {renderTitle(t("hero_title"))}
             </h1>
 
             <p className="hero-desc">{t("hero_paragraph")}</p>

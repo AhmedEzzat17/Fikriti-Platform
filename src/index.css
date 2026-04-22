@@ -918,9 +918,10 @@ body[dir="rtl"] .btn-custom:hover {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
+  top: 50%;
   right: 15px;
   opacity: 0;
-  transform: translateX(-10px);
+  transform: translate(-10px, -50%);
   transition: all 0.3s ease;
 }
 
@@ -929,12 +930,12 @@ body[dir="rtl"] .btn-custom::after {
   /* FontAwesome Arrow Left */
   right: auto;
   left: 15px;
-  transform: translateX(10px);
+  transform: translate(10px, -50%);
 }
 
 .btn-custom:hover::after {
   opacity: 1;
-  transform: translateX(0);
+  transform: translate(0, -50%);
 }
 
 /* ######################## */
@@ -1258,7 +1259,7 @@ body[dir="rtl"] .btn-custom::after {
 .tabe-content {
   display: flex;
   white-space: nowrap;
-  animation: tabe 15s linear infinite;
+  animation: tabe 25s linear infinite;
   width: max-content;
 }
 
@@ -1273,7 +1274,7 @@ body[dir="rtl"] .btn-custom::after {
 }
 
 body[dir="rtl"] .tabe-content {
-  animation: tabe2 12s infinite linear;
+  animation: tabe2 35s infinite linear;
 }
 
 @keyframes tabe2 {
