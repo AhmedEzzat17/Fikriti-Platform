@@ -8,12 +8,19 @@ const ContactPage: React.FC = () => {
   const { t, currentLang } = useLanguage();
   const isRtl = currentLang === "ar";
 
-
   // Simple form state
-  const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
   const [sent, setSent] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -26,13 +33,12 @@ const ContactPage: React.FC = () => {
   return (
     <section className="sub-page-section">
       <div className="container">
-
         {/* ── Breadcrumb ─────────────────────────────────────── */}
         <nav className="sub-breadcrumb" aria-label="breadcrumb">
           <a href="/" className="breadcrumb-link">
             <i className="fas fa-home"></i> {t("home")}
           </a>
-          <span className="breadcrumb-sep">{isRtl ? '‹' : '›'}</span>
+          <span className="breadcrumb-sep">{isRtl ? "‹" : "›"}</span>
           <span className="breadcrumb-current">{t("contactWithUs")}</span>
         </nav>
 
@@ -45,9 +51,12 @@ const ContactPage: React.FC = () => {
 
         {/* ── Contact grid ───────────────────────────────────── */}
         <div className="contact-page-grid">
-
           {/* ── Form panel ─────────────────────────────────── */}
-          <div className="cp-form-panel" data-aos="fade-up" data-aos-delay="100">
+          <div
+            className="cp-form-panel"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             {sent ? (
               /* Success state */
               <div className="cp-success">
@@ -56,7 +65,10 @@ const ContactPage: React.FC = () => {
                 </div>
                 <h3>{t("send")} ✓</h3>
                 <p>{t("teamCommitment")}</p>
-                <button className="cp-btn-primary mt-3" onClick={() => setSent(false)}>
+                <button
+                  className="cp-btn-primary mt-3"
+                  onClick={() => setSent(false)}
+                >
                   <i className="fas fa-redo"></i> {t("name")}
                 </button>
               </div>
@@ -149,8 +161,11 @@ const ContactPage: React.FC = () => {
           </div>
 
           {/* ── Info panel ─────────────────────────────────── */}
-          <aside className="cp-info-panel" data-aos="fade-up" data-aos-delay="300">
-
+          <aside
+            className="cp-info-panel"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <div className="cp-info-card">
               <div className="cp-info-icon-wrap cp-icon-blue">
                 <i className="fas fa-envelope"></i>
@@ -170,7 +185,7 @@ const ContactPage: React.FC = () => {
               <div>
                 <h4 className="cp-info-title">{t("callUsAt")}</h4>
                 <a href="tel:+201015762659" className="cp-info-link">
-                  +20 101 576 2659
+                  201015762659+
                 </a>
               </div>
             </div>
@@ -181,8 +196,13 @@ const ContactPage: React.FC = () => {
               </div>
               <div>
                 <h4 className="cp-info-title">{t("whatsapp")}</h4>
-                <a href="https://wa.me/201015762659" className="cp-info-link" target="_blank" rel="noreferrer">
-                  +20 101 576 2659
+                <a
+                  href="https://wa.me/201015762659"
+                  className="cp-info-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  201015762659+
                 </a>
               </div>
             </div>
@@ -191,14 +211,17 @@ const ContactPage: React.FC = () => {
             <div className="cp-cta-box">
               <h3>{t("contactWithUs")}</h3>
               <p>{t("helpBuildApp")}</p>
-              <a href="https://wa.me/201015762659" className="cp-btn-whatsapp" target="_blank" rel="noreferrer">
+              <a
+                href="https://wa.me/201015762659"
+                className="cp-btn-whatsapp"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fab fa-whatsapp"></i> WhatsApp
               </a>
             </div>
-
           </aside>
         </div>
-
       </div>
     </section>
   );

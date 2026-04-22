@@ -41,6 +41,15 @@ const Footer: React.FC = () => {
             {/* Social icons */}
             <div className="footer-socials">
               <a
+                href="https://www.facebook.com/fikritimarketing"
+                className="footer-social-btn footer-social-btn--facebook"
+                aria-label="facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a
                 href="https://wa.me/201015762659"
                 className="footer-social-btn footer-social-btn--whatsapp"
                 target="_blank"
@@ -50,11 +59,13 @@ const Footer: React.FC = () => {
                 <i className="fab fa-whatsapp"></i>
               </a>
               <a
-                href="mailto:info@fikriti.com"
-                className="footer-social-btn footer-social-btn--email"
-                aria-label="Email"
+                href="https://t.me/+201015762659"
+                className="footer-social-btn footer-social-btn--telegram"
+                aria-label="telegram"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <i className="fas fa-envelope"></i>
+                <i className="fab fa-telegram"></i>
               </a>
               <a
                 href="tel:+201015762659"
@@ -187,7 +198,7 @@ const Footer: React.FC = () => {
                 <span className="footer-contact-icon">
                   <i className="fas fa-phone"></i>
                 </span>
-                <span>+20 101 576 2659</span>
+                <span>201015762659+</span>
               </a>
               <a
                 href="https://wa.me/201015762659"
@@ -198,7 +209,7 @@ const Footer: React.FC = () => {
                 <span className="footer-contact-icon footer-contact-icon--wa">
                   <i className="fab fa-whatsapp"></i>
                 </span>
-                <span>+20 101 576 2659</span>
+                <span>201015762659+</span>
               </a>
             </div>
           </div>
