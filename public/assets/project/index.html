@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">فـكـرتـي | حلول برمجية وتصميم مواقع وتطبيقات</title>
+    <link rel="icon" href="../images/i-removebg-preview.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+</head>
+<body  data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+<div id="loader" class="loader-dots">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container fade-in">
+            <a class="navbar-brand" href="#"  onclick="location.href=('../../index.html')" >
+                <img src="../images/i-removebg-preview.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2 me-2" onclick="location.href=('../../index.html')" href="#hero" data-i18n="home">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2 me-2" href="#AboutUs" data-i18n="about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2 me-2" href="#Services" data-i18n="Services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2 me-2" href="#OurGoals" data-i18n="OurGoals">Our Goals</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2 me-2 active" onclick="location.href=('../portfolio/index.html')" href="#OurPortfolio" data-i18n="portfolio">Our Portfolio</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2 me-2" href="#Our Products" data-i18n="products">Our Products</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 p-2 me-2" href="#Contact" data-i18n="contact">Contact</a>
+                    </li>
+                </ul>
+                <a class="ms-3 lang" id="language-toggle" href="#" onclick="toggleLanguage(event)">Ar</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- section  -->
+    <div class="container my-5 main-content-container py-5 project" id="OurPortfolio" >
+    <div class="row g-4 py-5 ">
+        <div class="col-lg-6 order-lg-2">
+            <div class="card p-4  right-column-card">
+                <h2 class="text-end mb-2 asmen-title fade-in" data-i18n="projectTitle">Dp Clothing</h2>
+                <hr>
+                <div class="phone-mockups d-flex justify-content-center align-items-end mb-5">
+                    <div class="phone-frame iphone-2 mx-3 main-phone">
+                        <div class="screen d-flex justify-content-center align-items-center fade-in">
+                            <img src="../images/photo_2025-05-20_10-09-18.jpg" alt="" class="img-fluid fix-logo">
+                        </div>
+                    </div>
+                </div>
+                <p class="text-end asmen-description mb-5 fade-in " data-i18n="imgDescription">
+                    منصة إلكترونية متخصصة في عرض تشكيلات متنوعة من الملابس، تجمع بين التصميم العصري والتنسيق البصري المريح. يقدّم الموقع تجربة تصفّح سهلة ومنظمة تتيح للمستخدمين الاطلاع على أحدث صيحات الموضة، مع تصنيفات واضحة تناسب مختلف الأذواق والفئات. تم تصميم الموقع ليكون واجهة أنيقة ومرجع بصري مميز في عالم الأزياء.
+                </p>
+                <div class="button-group-bottom d-flex flex-wrap justify-content-center gap-3">
+                    <div class="fade-in-left">
+                        <a href="#" onclick="location.href=('http:/\/clothes-website-lime.vercel.app')" class="the-website btn custom-btn fade-in" data-i18n="webLink">
+                            الموقع الإلكتروني
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 order-lg-1">
+            <div class="card p-4 mb-4 system-goals-card">
+                <div class="title-with-icon d-flex align-items-center justify-content-between mb-3">
+                    <h3 class="mb-0 text-end fade-in-left" data-i18n="systemGoals">أهداف النظام</h3>
+                    <img src="../images/procedure.png" class="fade-in-left" width="60px" alt="">
+                </div>
+                <hr>
+                <ul class="list-unstyled custom-list">
+                    <li>
+                        <div class="list-item-content">
+                            <p class="mb-0 fade-in" data-i18n="goal1">1-عرض المنتجات بشكل جذّاب: تنظيم وتنسيق عرض الملابس بطريقة مرئية تسهّل على المستخدم اختيار ما يناسبه من حيث النوع، اللون، والمقاس.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-item-content">
+                            <p class="mb-0 fade-in" data-i18n="goal2">2-توفير تجربة مستخدم سلسة: تصميم واجهة استخدام بسيطة وواضحة تُمكّن الزائر من التصفح بسهولة وسرعة.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-item-content">
+                            <p class="mb-0 fade-in" data-i18n="goal3">3-تصنيف المنتجات بدقة: تقسيم الملابس إلى فئات (رجالي، نسائي، أطفال، كاجوال، رسمي، إلخ) لتسهيل الوصول للمنتج المطلوب.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card p-4 mb-4 system-features-card">
+                <div class="title-with-icon d-flex align-items-center justify-content-between mb-3">
+                    <h3 class="mb-0 text-end fade-in-left" data-i18n="systemFeatures">مميزات النظام</h3>
+                    <img src="../images/regression-testing.png" class="fade-in-left" width="60px" alt="">
+                </div>
+                <hr>
+                <ul class="list-unstyled custom-list">
+                    <li>
+                        <div class="list-item-content">
+                            <p class="mb-0 fade-in" data-i18n="feature1">1-واجهة سهلة الاستخدام: تصميم بسيط وسلس يُمكّن المستخدم من التصفّح والبحث عن المنتجات بكل راحة.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-item-content">
+                            <p class="mb-0 fade-in" data-i18n="feature2">2-تصنيفات دقيقة: تنظيم الملابس ضمن فئات واضحة (حسب النوع، الفئة، المناسبة، إلخ) لتسهيل الوصول السريع لما يبحث عنه الزائر.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-item-content">
+                            <p class="mb-0 fade-in" data-i18n="feature3">3-توافق مع جميع الأجهزة: تصميم متجاوب يعمل بكفاءة على الحاسوب، الهاتف المحمول، والأجهزة اللوحية.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card p-3 programming-languages-card">
+                <div class="title-with-icon d-flex align-items-center justify-content-between mb-3">
+                    <h3 class="mb-0 text-start fade-in-left" data-i18n="usedLanguages">لغات البرمجة المستخدمة</h3>
+                    <img src="../images/language.png" class="fade-in-left" width="60px" alt="">
+                </div>
+                <hr>
+                <div class="language-tags text-end fade-in">
+                    <span class="tag html">HTML</span>
+                    <span class="tag css">CSS</span>
+                    <span class="tag bootstrap">Bootstrap</span>
+                    <span class="tag js">JavaScript</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- section  -->
+
+    <!-- contact -->
+    <div class="container pb-5" id="Contact">
+        <h1 class="fade-in-left"><em data-i18n="contactWithUs">Contact With Us</em></h1>
+        <h2 class="text-center fade-in-left" data-i18n="helpBuildApp">LET US HELP YOU BUILD YOUR NEXT APP.</h2>
+        <div class="contact-container">
+            <div class="contact-form fade-in">
+                <form class="fade-in">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label data-i18n="name">Name</label>
+                            <input type="text" class="form-control text-light" data-i18n-placeholder="placeholderName">
+                        </div>
+                        <div class="col">
+                            <label data-i18n="email">Email</label>
+                            <input type="email" class="form-control text-light"
+                                data-i18n-placeholder="placeholderEmail">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label data-i18n="phone">Phone</label>
+                            <input type="text" class="form-control text-light" data-i18n-placeholder="placeholderPhone">
+                        </div>
+                        <div class="col">
+                            <label data-i18n="subject">Subject</label>
+                            <input type="text" class="form-control text-light"
+                                data-i18n-placeholder="placeholderSubject">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label data-i18n="message">Message</label>
+                        <textarea class="form-control text-light" rows="3"
+                            data-i18n-placeholder="placeholderMessage"></textarea>
+                    </div>
+                    <button type="submit" class="send-btn" data-i18n="send">Send</button>
+                </form>
+            </div>
+            <div class="contact-info fade-in">
+                <p class="p-one" data-i18n="teamCommitment">Our team of professionals is committed to delivering
+                    exceptional results in software development and technical project management.</p>
+                <p><strong data-i18n="messageUs">Message Us</strong><br>
+                    <a href="mailto:info@fikriti.com">
+                        <i class="fas fa-envelope fa-bounce"></i> &nbsp; info@fikriti.com
+                    </a>
+                </p>
+                <p><strong data-i18n="callUsAt">Call Us At</strong><br>
+                    <a href="tel:01015762659">
+                        <i class="fas fa-phone fa-shake"></i> &nbsp; +201015762659
+                    </a>
+                </p>
+                <p><strong data-i18n="whatsapp">WhatsApp</strong><br>
+                    <a href="https://wa.me/201015762659">
+                        <i class="fa-brands fa-whatsapp fa-bounce pe-1"></i> &nbsp; +201015762659
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <!-- tabe -->
+    <div class="tabe-container mb-5 fade-in">
+        <div class="tabe-content">
+            <span data-i18n="webDevelopment">Web Development</span>
+            <span data-i18n="mobileApp">Mobile Application</span>
+            <span data-i18n="uiux">UI / UX</span>
+            <span data-i18n="software">Software</span>
+            <span data-i18n="ecommerce">E-Commerce</span>
+            <span data-i18n="database">Database</span>
+            <span data-i18n="projectManagement">Project Management</span>
+            <span data-i18n="infoSystem">Information System</span>
+            <span data-i18n="webDevelopment">Web Development</span>
+            <span data-i18n="mobileApp">Mobile Application</span>
+            <span data-i18n="uiux">UI / UX</span>
+            <span data-i18n="software">Software</span>
+            <span data-i18n="ecommerce">E-Commerce</span>
+            <span data-i18n="database">Database</span>
+            <span data-i18n="projectManagement">Project Management</span>
+            <span data-i18n="infoSystem">Information System</span>
+        </div>
+    </div>
+    <!-- tabe -->
+    <!-- footer -->
+    <div class="footer text-center pt-5 pb-5 text-md-start text-white-50" dir="ltr">
+        <div class="container">
+            <div class="row fade-in-left foo-text">
+
+                <div class="col-md-6 col-lg-4 section-info">
+                    <div class="info mb-5">
+                        <img loading="lazy" class="mb-4 fade-in-left img-L" src="../images/i-removebg-preview.png"
+                            alt="">
+                        <p class="mb-5 p1-foo text-dark fade-in-left" data-i18n="footerInfo">
+                            At Integrated Solutions, we combine creativity and professionalism to transform your ideas
+                            into inspiring digital experiences. Connect with us today to achieve tangible success
+                            together.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2 col-sm-6 fade-in-left section-links">
+                    <h5 class="text-dark" data-i18n="footerLinks">Links</h5>
+                    <ul class="list-unstyled lh-lg">
+                        <a href="/">
+                            <li data-i18n="home">Home</li>
+                        </a>
+                        <a href="{{ route('home') }}#OurServices">
+                            <li data-i18n="ourServices">Our Services</li>
+                        </a>
+                        <a href="{{ route('home') }}#OurPortfolio">
+                            <li data-i18n="portfolio">Portfolio</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-2 col-sm-6 fade-in-left section-about">
+                    <h5 class="text-dark" data-i18n="footerAboutUs">About Us</h5>
+                    <ul class="list-unstyled lh-lg">
+                        <a href="{{ route('home') }}#AboutUs">
+                            <li data-i18n="aboutUs">About Us</li>
+                        </a>
+                        <a href="{{ route('home') }}#Contact">
+                            <li data-i18n="contactUs">Contact Us</li>
+                        </a>
+                        <a href="">
+                            <li data-i18n="blog">Blog</li>
+                        </a>
+                        <a href="">
+                            <li data-i18n="privacy">privacy policy</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-in-left section-contact">
+                    <div class="contact">
+                        <h5 class="text-dark mb-2" data-i18n="footerContact">Contact Us</h5>
+                        <p class="lh-lg text-dark" data-i18n="footerContactText">
+                            Get in touch with us via mail or phone. We are waiting for your call or message.
+                        </p>
+                        <a class="btn rounded-pill main-btn w-100 mt-3"
+                            href="mailto:info@fikriti.com">info@fikriti.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright text-dark fade-in-left text-center">
+                <div>
+                    <span  data-i18n="copyrightText" > © 2025 All rights reserved for Fikriti Software Development team. </span>
+                    <span class="blue-text" onclick="location.href=('../../index.html')">Fikrati.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <!-- whatsapp -->
+    <a href="https://wa.me/201015762659" class="whatsapp" target="_blank">
+        <img loading="lazy" src="./../images/whatsapp.png" alt="">
+    </a>
+    <!-- whatsapp -->
+    <!-- phone -->
+    <a href="tel:01015762659" class="phone" target="_blank">
+        <i class="fas fa-phone fa-shake phone-i "></i>
+    </a>
+    <!-- phone -->
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

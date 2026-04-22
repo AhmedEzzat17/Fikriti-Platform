@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إنشاء حساب</title>
+
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+  <style>
+    :root {
+      --dark-color: #19283f;
+      --light-color: #ffffff;
+      --main-color: #0d83fd;
+    }
+
+    body {
+      background-color: #0d81fd49;
+      color: var(--light-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      margin: 10px;
+    }
+
+    .register-box {
+      background-color: #1f2d45;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .register-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--main-color);
+    }
+
+    .form-control {
+      background-color: #2c3e5c;
+      border: 1px solid #3f5a7a;
+      color: #fff;
+    }
+
+    .form-control:focus {
+      border-color: var(--main-color);
+      box-shadow: none;
+    }
+
+    .btn-main {
+      background-color: var(--main-color);
+      color: #fff;
+      border: none;
+    }
+
+    .btn-main:hover {
+      background-color: #0b6dd6;
+      color: #fff;
+    }
+
+    .register-footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .register-footer a {
+      color: var(--main-color);
+      text-decoration: none;
+    }
+
+    .register-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-box">
+    <h2><i class="fas fa-user-plus"></i> إنشاء حساب جديد</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">الاسم الكامل</label>
+        <input type="text" class="form-control" id="name" placeholder="أدخل اسمك الكامل">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">البريد الإلكتروني</label>
+        <input type="email" class="form-control" id="email" placeholder="example@domain.com">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">كلمة المرور</label>
+        <input type="password" class="form-control" id="password">
+      </div>
+      <!-- <div class="mb-3">
+        <label for="confirm-password" class="form-label">تأكيد كلمة المرور</label>
+        <input type="password" class="form-control" id="confirm-password" placeholder="********">
+      </div> -->
+      <div class="d-grid">
+        <button type="submit" class="btn btn-main">إنشاء الحساب</button>
+      </div>
+    </form>
+    <div class="register-footer mt-3">
+      لديك حساب بالفعل؟ <a href="./index.html">تسجيل الدخول</a>
+    </div>
+  </div>
+
+  <script src="../js/all.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
