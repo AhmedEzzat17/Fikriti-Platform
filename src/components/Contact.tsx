@@ -103,7 +103,7 @@ const Contact: React.FC = () => {
             </div>
             <div>
               <strong>{t("callUsAt")}</strong>
-              <a href="tel:+201015762659">+20 101 576 2659</a>
+              <a href="tel:+201015762659">201015762659+</a>
             </div>
           </div>
 
@@ -118,7 +118,7 @@ const Contact: React.FC = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                +20 101 576 2659
+                201015762659+
               </a>
             </div>
           </div>

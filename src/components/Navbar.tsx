@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+  const navRef = useRef<HTMLElement>(null);
 
   // Apply shadow when scrolled and update ScrollSpy
   useEffect(() => {
@@ -54,6 +55,17 @@ const Navbar: React.FC = () => {
     setMenuOpen(false);
   }, [location]);
 
+  // Close mobile menu when clicking outside the navbar
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (menuOpen && navRef.current && !navRef.current.contains(e.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [menuOpen]);
+
   // Navigate to home page then scroll to a hash section
   const goToSection = (hash: string) => {
     if (location.pathname !== "/") {
@@ -80,6 +92,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
+      ref={navRef}
       className={`navbar navbar-expand-lg sticky-top ${scrolled ? "scrolled" : ""} ${isSubPage ? "is-subpage" : ""}`}
       id="navbar"
       style={navScrolled}
