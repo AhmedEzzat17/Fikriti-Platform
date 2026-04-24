@@ -126,5 +126,11 @@
   "tape_seo": "SEO Optimization",
   "tape_custom_software": "Custom Software",
   "tape_qa": "Quality Assurance",
-  "tape_hosting": "Reliable Hosting"
+  "tape_hosting": "Reliable Hosting",
+  "dashboard": "Dashboard",
+  "users": "Users",
+  "our_work": "Our Work",
+  "technologies": "Technologies",
+  "messages": "Messages",
+  "settings": "Settings"
 }

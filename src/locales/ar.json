@@ -126,5 +126,11 @@
   "tape_seo": "تحسين محركات البحث",
   "tape_custom_software": "برمجيات مخصصة",
   "tape_qa": "ضمان الجودة والاختبار",
-  "tape_hosting": "استضافة موثوقة وآمنة"
+  "tape_hosting": "استضافة موثوقة وآمنة",
+  "dashboard": "لوحة التحكم",
+  "users": "المستخدمين",
+  "our_work": "أعمالنا",
+  "technologies": "التقنيات",
+  "messages": "الرسائل",
+  "settings": "الإعدادات"
 }
