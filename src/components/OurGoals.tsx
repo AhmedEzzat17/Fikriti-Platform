@@ -35,7 +35,7 @@ const OurGoals: React.FC = () => {
             <h5 className="fw-bold mt-2">{t("innovation")}</h5>
           </div>
           <div className="value-card">
-            <div className="value-icon"><i className="fa-solid fa-award" style={{color: '#0d83fd'}}></i></div>
+            <div className="value-icon"><i className="fa-solid fa-award" style={{ color: 'green' }}></i></div>
             <h5 className="fw-bold mt-2">{t("quality")}</h5>
           </div>
           <div className="value-card">
@@ -43,7 +43,7 @@ const OurGoals: React.FC = () => {
             <h5 className="fw-bold mt-2">{t("focusOnClient")}</h5>
           </div>
           <div className="value-card">
-            <div className="value-icon"><i className="fa-solid fa-users" style={{color: '#0dcaf0'}}></i></div>
+            <div className="value-icon"><i className="fa-solid fa-users" style={{ color: '#0dcaf0' }}></i></div>
             <h5 className="fw-bold mt-2">{t("teamwork")}</h5>
           </div>
           <div className="value-card">
@@ -51,7 +51,7 @@ const OurGoals: React.FC = () => {
             <h5 className="fw-bold mt-2">{t("quickResponse")}</h5>
           </div>
           <div className="value-card">
-            <div className="value-icon"><i className="fa-solid fa-book-open" style={{color: '#0d83fd'}}></i></div>
+            <div className="value-icon"><i className="fa-solid fa-book-open" style={{ color: '#4c137dff' }}></i></div>
             <h5 className="fw-bold mt-2">{t("continuousLearning")}</h5>
           </div>
           <div className="value-card">

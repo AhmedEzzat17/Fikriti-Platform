@@ -1,18 +1,6 @@
 import React from "react";
 import { useLanguage } from "../../context/LanguageContext";
 
-/* ──────────────────────────────────────────────────────
-   Helper: column widths injected as inline styles to
-   bypass the global index.css overrides that force
-   .row > * to width:auto / max-width:80%
-────────────────────────────────────────────────────── */
-const col = {
-  quarter: { flex: "0 0 auto", width: "25%", maxWidth: "25%" } as React.CSSProperties,
-  half:    { flex: "0 0 auto", width: "50%", maxWidth: "50%" } as React.CSSProperties,
-  twoThirds:  { flex: "0 0 auto", width: "66.6667%", maxWidth: "66.6667%" } as React.CSSProperties,
-  oneThird:   { flex: "0 0 auto", width: "33.3333%", maxWidth: "33.3333%" } as React.CSSProperties,
-  full:    { flex: "0 0 auto", width: "100%", maxWidth: "100%" } as React.CSSProperties,
-};
 
 const Dashboard: React.FC = () => {
   const { currentLang } = useLanguage();

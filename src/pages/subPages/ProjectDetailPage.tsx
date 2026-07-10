@@ -114,10 +114,9 @@ const ProjectDetailPage: React.FC = () => {
 
         <div
           className="detail-hero"
-          style={{ background: `linear-gradient(${isRtl ? '-135deg' : '135deg'}, #19283f 0%, #1e3a5f 70%, ${project.color}30 100%)` }}
+          style={{ background: "var(--dark-color)", borderBottom: `3px solid ${project.color}` }}
           data-aos="zoom-in"
         >
-          <div className="detail-hero-circle" style={{ background: `${project.color}20` }}></div>
 
           {/* Tags */}
           <div className="detail-tags-row">

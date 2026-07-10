@@ -21,6 +21,7 @@ import ServiceDetailPage from "./pages/subPages/ServiceDetailPage";
 import PortfolioPage from "./pages/subPages/PortfolioPage";
 import ProjectDetailPage from "./pages/subPages/ProjectDetailPage";
 import ContactPage from "./pages/subPages/ContactPage";
+import BlogDetailPage from "./pages/subPages/BlogDetailPage";
 
 // Admin Pages (Lazy Loaded for performance)
 const Dashboard = lazy(() => import("./admin/pages/Dashboard"));
@@ -67,6 +68,7 @@ function App() {
               <Route path="/portfolio" element={<PortfolioPage />} />
               <Route path="/portfolio/:id" element={<ProjectDetailPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/blog/:id" element={<BlogDetailPage />} />
             </Route>
 
             {/* Admin Dashboard */}

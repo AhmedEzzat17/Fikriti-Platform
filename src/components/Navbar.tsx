@@ -79,13 +79,13 @@ const Navbar: React.FC = () => {
 
   const navScrolled = scrolled
     ? {
-        width: "90%",
-        margin: "0 auto",
-        left: "2.5%",
-        right: "2.5%",
-        top: "12px",
-        borderRadius: "40px",
-      }
+      width: "90%",
+      margin: "0 auto",
+      left: "2.5%",
+      right: "2.5%",
+      top: "12px",
+      borderRadius: "40px",
+    }
     : { width: "100%", margin: 0, left: 0, right: 0, top: 0, borderRadius: 0 };
 
   const isSubPage = location.pathname !== "/";
@@ -110,17 +110,51 @@ const Navbar: React.FC = () => {
           <img src="/assets/images/i-removebg-preview.png" alt="Fikriti Logo" />
         </a>
 
-        {/* Mobile toggle */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-expanded={menuOpen}
-          aria-label="Toggle navigation"
-          aria-controls="main"
-        >
-          <i className={`fa-solid ${menuOpen ? "fa-xmark" : "fa-bars"}`}></i>
-        </button>
+        {/* Mobile & Desktop Action Area */}
+        <div className="d-flex align-items-center gap-2 gap-lg-3 order-lg-last">
+          {/* CTA Button */}
+          <a
+            href="/contact"
+            title="إحجز استشارة الآن"
+            className="btn rounded-pill px-3 py-2 d-flex align-items-center justify-content-center"
+            style={{ backgroundColor: "var(--main-color)", color: "#fff", fontWeight: "bold", border: "none", fontSize: "14px", height: "40px" }}
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("/contact");
+              setMenuOpen(false);
+            }}
+          >
+            <span className="d-none d-lg-inline">{t("book_free_consultation")}</span>
+            <span className="d-inline d-lg-none"><i className="fa-solid fa-headset"></i></span>
+          </a>
+
+          {/* Language toggle */}
+          <a
+            className="lang m-0 d-flex align-items-center justify-content-center"
+            id="language-toggle"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              toggleLanguage();
+            }}
+            style={{ width: '40px', height: '40px' }}
+          >
+            {currentLang === "en" ? "Ar" : "En"}
+          </a>
+
+          {/* Mobile toggle */}
+          <button
+            className="navbar-toggler ms-1 p-1 d-lg-none d-flex align-items-center justify-content-center"
+            type="button"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-expanded={menuOpen}
+            aria-label="Toggle navigation"
+            aria-controls="main"
+            style={{ height: '40px', width: '45px' }}
+          >
+            <i className={`fa-solid ${menuOpen ? "fa-xmark" : "fa-bars"}`}></i>
+          </button>
+        </div>
 
         {/* Nav links */}
         <div
@@ -196,15 +230,7 @@ const Navbar: React.FC = () => {
             </li>
           </ul>
 
-          {/* Language toggle */}
-          <a
-            className="ms-3 lang"
-            id="language-toggle"
-            href="#"
-            onClick={toggleLanguage}
-          >
-            {currentLang === "en" ? "Ar" : "En"}
-          </a>
+
         </div>
       </div>
     </nav>

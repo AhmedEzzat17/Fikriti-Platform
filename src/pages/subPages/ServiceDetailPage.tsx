@@ -131,9 +131,7 @@ const ServiceDetailPage: React.FC = () => {
         </nav>
 
         {/* ── Hero banner ──────────────────────────────────── */}
-        <div className="detail-hero" data-aos="zoom-in" style={{ background: `linear-gradient(${isRtl ? '-135deg' : '135deg'}, #19283f 0%, #1e3a5f 70%, ${service.color}30 100%)` }}>
-          {/* Decorative circle */}
-          <div className="detail-hero-circle" style={{ background: `${service.color}20` }}></div>
+        <div className="detail-hero" data-aos="zoom-in" style={{ background: "var(--dark-color)", borderBottom: `3px solid ${service.color}` }}>
 
           {/* Tags */}
           <div className="detail-tags-row">

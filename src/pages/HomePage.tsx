@@ -3,7 +3,10 @@ import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import OurGoals from "../components/OurGoals";
+import CtaSection from "../components/CtaSection";
 import OurPortfolio from "../components/OurPortfolio";
+import Partners from "../components/Partners";
+import BlogSection from "../components/BlogSection";
 import Contact from "../components/Contact";
 import TabsTape from "../components/TabsTape";
 
@@ -19,7 +22,12 @@ const HomePage: React.FC = () => {
       <AboutUs />
       <Services />
       <OurGoals />
+      <div className="container">
+        <CtaSection />
+      </div>
       <OurPortfolio />
+      <Partners />
+      <BlogSection />
       <Contact />
       <TabsTape />
     </>
