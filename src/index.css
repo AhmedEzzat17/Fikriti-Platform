@@ -21,6 +21,7 @@ html {
   --dark-color: #19283f;
   --light-color: #ffffff;
   --main-color: #0d83fd;
+  --primary-color: var(--main-color);
 
   /* Blue shade palette – consistent across the whole site */
   --blue-100: #e8f3ff;

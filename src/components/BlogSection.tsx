@@ -93,7 +93,7 @@ const BlogSection: React.FC = () => {
                     <h5 className="card-title fw-bold mb-3" style={{ color: "var(--dark-color)" }}>{blog.title}</h5>
                   </Link>
                   <p className="card-text text-muted flex-grow-1" style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>{blog.desc}</p>
-                  <Link to={`/blog/${blog.id}`} className="mt-3 text-decoration-none fw-bold" style={{ color: "var(--primary-color)" }}>
+                  <Link to={`/blog/${blog.id}`} className="mt-3 text-decoration-none fw-bold" style={{ color: "var(--main-color)" }}>
                     {t('blog_read_more')} {isRtl ? '←' : '→'}
                   </Link>
                 </div>
@@ -123,11 +123,11 @@ const BlogSection: React.FC = () => {
         
         /* Swiper specific styles */
         .blog-swiper .swiper-pagination-bullet-active {
-          background-color: var(--primary-color);
+          background-color: var(--main-color);
         }
         .blog-swiper .swiper-button-next,
         .blog-swiper .swiper-button-prev {
-          color: var(--primary-color);
+          color: var(--main-color);
           background-color: rgba(255, 255, 255, 0.9);
           width: 40px;
           height: 40px;
