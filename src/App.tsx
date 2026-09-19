@@ -16,23 +16,30 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import "./index.css";
 
-// Route-level code splitting keeps the first downloaded JavaScript focused on
 // the current page; each screen is loaded only when its route is visited.
 const HomePage = lazy(() => import("./pages/HomePage"));
 const LoginPage = lazy(() => import("./pages/LoginPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const ServicesPage = lazy(() => import("./pages/subPages/ServicesPage"));
-const ServiceDetailPage = lazy(() => import("./pages/subPages/ServiceDetailPage"));
+const ServiceDetailPage = lazy(
+  () => import("./pages/subPages/ServiceDetailPage"),
+);
 const PortfolioPage = lazy(() => import("./pages/subPages/PortfolioPage"));
-const ProjectDetailPage = lazy(() => import("./pages/subPages/ProjectDetailPage"));
+const ProjectDetailPage = lazy(
+  () => import("./pages/subPages/ProjectDetailPage"),
+);
 const ContactPage = lazy(() => import("./pages/subPages/ContactPage"));
 const BlogDetailPage = lazy(() => import("./pages/subPages/BlogDetailPage"));
-const ClientProjectView = lazy(() => import("./pages/client/ClientProjectView"));
+const ClientProjectView = lazy(
+  () => import("./pages/client/ClientProjectView"),
+);
 
 const Dashboard = lazy(() => import("./admin/pages/Dashboard"));
 const UsersPage = lazy(() => import("./admin/pages/UsersPage"));
 const ProjectsPage = lazy(() => import("./admin/pages/ProjectsPage"));
-const ClientProjectsPage = lazy(() => import("./admin/pages/ClientProjectsPage"));
+const ClientProjectsPage = lazy(
+  () => import("./admin/pages/ClientProjectsPage"),
+);
 const ServicesManager = lazy(() => import("./admin/pages/ServicesManager"));
 const BlogManager = lazy(() => import("./admin/pages/BlogManager"));
 const TechnologiesPage = lazy(() => import("./admin/pages/TechnologiesPage"));
@@ -78,7 +85,10 @@ function App() {
             </Route>
 
             {/* Client Portal View */}
-            <Route path="/client/projects/:id" element={<ClientProjectView />} />
+            <Route
+              path="/client/projects/:id"
+              element={<ClientProjectView />}
+            />
 
             {/* Admin Dashboard Routes */}
             <Route path="/admin" element={<AdminLayout />}>
