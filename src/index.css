@@ -1001,9 +1001,16 @@ body[dir="rtl"] .row>.all-cards {
   overflow: hidden;
 }
 
-.card:hover {
+.card:not(.admin-card, .no-hover-scale):hover {
   transform: scale(1.03);
 }
+
+/* ── Enterprise Admin & Modal UI CSS Reset (Zero Transform/Scale) ── */
+.admin-card, .admin-card:hover, .no-hover-scale, .no-hover-scale:hover, .modal-content, .modal-content:hover, [class*="admin-"] .card, [class*="admin-"] .card:hover {
+  transform: none !important;
+  scale: 1 !important;
+}
+
 
 .card img {
   width: 100%;

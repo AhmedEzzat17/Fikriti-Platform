@@ -153,5 +153,17 @@
   "blog_5_title": "Custom ERP vs. Ready-Made Software?",
   "blog_5_desc": "A quick comparison between off-the-shelf software and custom-built systems, and when a custom system saves you money in the long run.",
   "blog_6_title": "The Importance of Web Security and Encryption",
-  "blog_6_desc": "A data breach can destroy trust. Learn the basics of web security, SSL, and how to protect your business and clients with practical steps."
+  "blog_6_desc": "A data breach can destroy trust. Learn the basics of web security, SSL, and how to protect your business and clients with practical steps.",
+  "login_title": "Sign In",
+  "login_subtitle": "Welcome to Fikriti Platform for Integrated Software Solutions",
+  "login_email_label": "Email Address",
+  "login_password_label": "Password",
+  "login_button": "Sign In",
+  "login_authenticating": "Authenticating...",
+  "login_close": "Close",
+  "login_err_email_required": "Please enter your email address",
+  "login_err_email_invalid": "Please enter a valid email address",
+  "login_err_password_required": "Please enter your password",
+  "login_err_credentials": "The provided credentials are incorrect. Please check your email and password.",
+  "login_err_server": "Unable to connect to the server. Please check your connection and try again."
 }

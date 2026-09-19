@@ -1,0 +1,262 @@
+/* Premium 404 NotFound Page Styles — Fikriti Platform */
+
+.notfound-page-container {
+    background: #030712;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    color: #f8fafc;
+    box-sizing: border-box;
+    font-family: 'Cairo', 'Inter', 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Background Canvas */
+.notfound-bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Cyber Grid Effect */
+.notfound-bg-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(13, 131, 253, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(13, 131, 253, 0.12) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 2;
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+/* Rotating Ambient Pulse Glow */
+.notfound-ambient-glow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at center, 
+        rgba(13, 131, 253, 0.25) 0%, 
+        rgba(96, 239, 255, 0.12) 40%, 
+        transparent 70%);
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: 2;
+    pointer-events: none;
+    animation: notfound-pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes notfound-pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.95);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.15);
+        opacity: 1;
+    }
+}
+
+/* Glassmorphism Card Container */
+.notfound-card {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 640px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(96, 239, 255, 0.2);
+    border-radius: 28px;
+    padding: 48px 36px;
+    text-align: center;
+    box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.8),
+        0 0 40px rgba(13, 131, 253, 0.2);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.notfound-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+        0 30px 60px -12px rgba(0, 0, 0, 0.9),
+        0 0 50px rgba(13, 131, 253, 0.35);
+    border-color: rgba(96, 239, 255, 0.35);
+}
+
+/* Badge Header */
+.notfound-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: rgba(13, 131, 253, 0.12);
+    border: 1px solid rgba(96, 239, 255, 0.3);
+    border-radius: 30px;
+    color: #60efff;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.notfound-badge-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #60efff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #60efff;
+    animation: notfound-blink 1.5s infinite;
+}
+
+@keyframes notfound-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* 404 Large Number Typography */
+.notfound-code {
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0 16px 0;
+    letter-spacing: -2px;
+    background: linear-gradient(135deg, #60efff 0%, #0d83fd 50%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 10px 20px rgba(13, 131, 253, 0.35));
+    user-select: none;
+}
+
+@media (max-width: 640px) {
+    .notfound-code {
+        font-size: 88px;
+    }
+}
+
+/* Heading & Subtitle */
+.notfound-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.notfound-desc {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #94a3b8;
+    max-width: 480px;
+    margin: 0 auto 36px auto;
+}
+
+/* Button Group */
+.notfound-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.notfound-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #0d83fd 0%, #0056b3 100%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(13, 131, 253, 0.4);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+.notfound-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(13, 131, 253, 0.6);
+    background: linear-gradient(135deg, #1a8cff 0%, #0066cc 100%);
+    color: #ffffff;
+}
+
+.notfound-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: rgba(30, 41, 59, 0.8);
+    color: #cbd5e1;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.notfound-btn-secondary:hover {
+    background: rgba(51, 65, 85, 0.9);
+    border-color: rgba(96, 239, 255, 0.4);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.notfound-btn-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    background: transparent;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.notfound-btn-back:hover {
+    color: #94a3b8;
+}
+
+/* Footer Section Inside Card */
+.notfound-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.notfound-err-code {
+    font-family: monospace;
+    color: #60efff;
+    opacity: 0.8;
+}

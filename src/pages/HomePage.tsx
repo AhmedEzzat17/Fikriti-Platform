@@ -5,7 +5,7 @@ import Services from "../components/Services";
 import OurGoals from "../components/OurGoals";
 import CtaSection from "../components/CtaSection";
 import OurPortfolio from "../components/OurPortfolio";
-import Partners from "../components/Partners";
+// import Partners from "../components/Partners";  // for later inshallah
 import BlogSection from "../components/BlogSection";
 import Contact from "../components/Contact";
 import TabsTape from "../components/TabsTape";
@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
         <CtaSection />
       </div>
       <OurPortfolio />
-      <Partners />
+      {/* <Partners /> */}
       <BlogSection />
       <Contact />
       <TabsTape />
